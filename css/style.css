@@ -1,0 +1,487 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+    background-image: url("../images/background-img.jpg");
+    overflow-x: hidden
+}
+
+@keyframes mymove {
+    from  {width: 25px; opacity: 0;}
+    to {width: 475px; opacity: 1;}
+}
+
+a.skip{
+    padding: 6px;
+    z-index: 1;
+    position: absolute;
+    left: -500px;
+    color: #2E4C6D;
+}
+
+a.skip:focus {
+    position: absolute;
+    background-color: #Ffffff;
+    left: 5px;
+    top: 20px;
+    border-top: dashed #F76E11 3px;
+}
+
+#logo {
+    position: relative;
+    animation-name: mymove;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+h1, h2{
+    font-family: "Audiowide", 'Montserrat', sans-serif;
+    color: #406882;
+    font-size: 2em;
+	font-weight: bold;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.title {
+    margin: 0;
+    font-size: 1.45em;
+}
+
+
+.main-nav {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.main-nav a {
+	padding: 5px 15px;
+	text-transform: uppercase;
+    color: white;
+	font-size: .99em;
+}
+
+.main-nav a:hover {
+	color: #F76E11;
+}
+
+.header,
+.main-nav {
+	display: flex;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B4361
+}
+
+.active{
+	/* color:  #2E4C6D; */
+	text-align: center;
+	background-color: white;
+}
+
+.active a{
+	text-decoration: none;
+    color: #2E4C6D;
+    font-weight: bold;
+}
+
+footer{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    background-color: #2E4C6D;
+}
+
+.social a{
+    color: white;
+}
+
+.social a:hover {
+	color: #DADDFC;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+/* ----------- Style the images ------------ */
+
+/* .photos img{
+    height: auto;
+    width: 300px;
+    border: 3px solid #DADDFC;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 10px;
+} */
+/*
+.photos img:hover{
+	border: dashed;
+	border-color:  #DADDFC;
+	box-shadow: 10px 10px #FC997C;
+}
+} */
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1.5rem;
+    justify-items: center;
+    margin: 1rem;;
+    padding: 1.5rem;
+}
+  /* The Picture Frame */
+.gallery-frame {
+    padding: .5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #2E4C6D;
+    color: #d9d9d9;
+}
+
+  /* The Images */
+.gallery-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.25s ease-in-out;
+}
+
+.index-img {
+    height: auto;
+    width: 200px;
+    border: 3px solid #DADDFC;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* ------------------ */
+
+p {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5px;
+}
+
+li{
+    text-align: center;
+}
+
+h3 {
+    color: #406882;
+    font-size: 1.2em;
+	font-weight: bold;
+    text-align: center;
+}
+
+#enfp{
+    text-align: center;
+}
+
+/* --------------------- */
+.idx-photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1.5rem;
+    justify-items: center;
+    margin: 1rem;;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    justify-items: center;
+    padding: 0;
+}
+
+.music,
+.drama {
+    border: 3px dashed #FC997C;
+    border-radius: 10px;
+    margin: 10px 20px;
+    padding: .5rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.music-img,
+.drama img {
+    width: 150px;
+    height: auto;
+    border: none;
+    justify-items: center;
+}
+
+.title a {
+    color: white;
+}
+
+/* ------------ form -----------------*/
+form {
+    border: 1px dashed #f1f1f1;
+    margin: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+legend{
+    font-size: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #2E4C6D;
+    font-weight: bold;
+}
+ß
+label{
+    text-align: center;
+    margin-right:10px;
+    width:15%;
+}
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+span{
+    margin-left:20%;
+    font-weight: bold;
+}
+
+textarea{
+    width: 100%;
+    height: 35vh;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=checkbox]{
+      display:inline;
+      width:inherit;
+}
+
+input[type=submit] {
+    background-color: #2E4C6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+/* ------------ form end -----------------*/
+
+/* ------------ flip card ------------*/
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner,
+.flip-card:focus-within .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: #2E4C6D;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* ------------ flip card ------------*/
+
+/* reduced motion preferred */
+@media (prefers-reduced-motion) {
+    #logo
+    #enfp {
+        animation: none;
+    }
+    html{
+        scroll-behavior: auto; /* Removes scroll animation */
+      }
+
+    /*Turn off transition*/
+    a.skip {
+        -webkit-transition: initial; /* sets to default setting */
+        transition: initial; /* sets to default setting */
+    }
+}
+
+/* screen-size is greater than 700px */
+@media only screen and (min-width: 768px) {
+    header, .main-nav {
+        display: flex;
+        flex-direction: row;
+    }
+    #logo {
+        margin: 0;
+    }
+    header {
+        justify-content: space-between;
+    }
+    .main-nav {
+        justify-content: center;
+    }
+    nav {
+        align-self: center;
+    }
+    body > header {
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+    form {
+        border: 5px dashed #f1f1f1;
+        margin: 5%;
+        padding: 5%;
+    }
+    .index-img {
+        height: auto;
+        width: 300px;
+        border: 5px solid #DADDFC;
+        padding: 30px;
+        border-radius: 10px;
+        margin: 20px;
+    }
+    .music-img,
+    .drama img {
+        width: 300px;
+        height: auto;
+        border: none;
+        justify-items: center;
+    }
+    .index-img:hover{
+        border: dashed;
+        border-color:  #DADDFC;
+        box-shadow: 10px 10px #FC997C;
+    }
+    .music:nth-child(odd):hover,
+    .drama:nth-child(even):hover{
+        background-color: #B1D0E0;
+    }
+
+    .music:nth-child(even):hover,
+    .drama:nth-child(odd):hover {
+        background-color: #F0ECE3;
+    }
+
+    .gallery-img:hover {
+        opacity: .6;
+    }
+
+    .photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        margin: 1.25rem;
+        padding: 2rem;
+    }
+}
+
+/* screens between width 1000 px */
+@media screen and (min-width: 1600px) {
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        justify-content: space-around;
+    }
+
+    nav {
+        width:  100%;
+    }
+
+    form {
+        border: 5px dashed #f1f1f1;
+        margin: 5%;
+        padding: 5%;
+    }
+    body {
+        background-image: none;
+        background-color: #d7eef5;
+    }
+
+    .drama img {
+        height: 200px;
+        width: auto
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        margin: 1.25rem;
+    }
+    .container, .music {
+        grid-column: 2 / span 2;
+    }
+    .music-img,
+    .drama img {
+        width: 350px;
+        height: auto;
+        border: none;
+        justify-items: center;
+    }
+
+    .gallery-frame {
+        padding: .6rem;
+        font-size: 1.5rem;
+    }
+}
