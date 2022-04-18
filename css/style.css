@@ -469,9 +469,6 @@ input[type=submit]:hover {
         justify-items: center;
         margin: 1.25rem;
     }
-    .container, .music {
-        grid-column: 2 / span 2;
-    }
     .music-img,
     .drama img {
         width: 350px;
